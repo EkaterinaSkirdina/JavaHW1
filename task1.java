@@ -7,27 +7,12 @@ package SeminarsHW.HW1;
 
 import java.util.Scanner;
 
-// public class task1 {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-//         String s = scanner.nextLine();        
-//         StringBuilder newStr = new StringBuilder();        
-//         String[] words = s.split(" ");
-//         System.out.println(words);
-//         for (int i = words.length - 1; i >= 0; i--) {
-//             newStr.append(words[i] + " ");
-//         }
-//         System.out.println(newStr);
-//     }
-// }
-
 public class task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         StringBuilder newStr = new StringBuilder();
         String[] words = s.trim().split(" +");
-        System.out.println(words);
         for (int i = words.length - 1; i >= 0; i--) {
             if (i > 0) {
                 newStr.append(words[i] + " ");
